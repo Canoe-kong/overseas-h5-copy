@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './app.scss';
+import 'taro-ui/dist/style/index.scss';
 
 class App extends Component {
   componentDidMount() {}
@@ -15,7 +16,6 @@ class App extends Component {
   }
 
   render() {
-    // 在入口组件不会渲染任何内容，但我们可以在这里做类似于状态管理的事情
     return this.props.children;
   }
 }
